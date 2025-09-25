@@ -282,3 +282,79 @@ h1, h2, h3, h4, h5, h6{ text-align:center; }
 .site-title{ text-align:center; }
 .menu a, .pill, .cta, .rail-label, .viewer-title, .icon-slot{ text-align:left; }
 
+/* =========================
+   FIXES MÓVIL (≤ 640px)
+   ========================= */
+@media (max-width: 640px){
+
+  /* --- NAV superior: 2 columnas y separación con la casita --- */
+  .top-rail{
+    /* misma estética, pero ocupa desde 68px a la derecha para no topar la casita */
+    left: 68px;           /* deja hueco ≈ ancho de la casita + margen */
+    right: 12px;
+    top: 10px;
+    height: auto;
+    padding: 8px 10px;
+    width: auto;          /* deja que crezca según el contenido */
+  }
+  /* oculta el "Inicio" y los tres puntitos para ahorrar espacio */
+  .top-rail .rail-label,
+  .top-rail .rail-dots{ display: none !important; }
+
+  /* menú siempre visible y en 2 columnas */
+  .top-rail .menu{
+    position: static !important;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .top-rail .menu a{
+    display: block;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 14px;
+    background: rgba(255,255,255,.16);
+  }
+
+  /* --- SOBRE MÍ: texto cómodo y círculos más chicos --- */
+  .about{
+    /* baja el tamaño base de los círculos */
+    --aboutH: 260px;      /* antes 300–420+; mucho más contenido en móvil */
+    --offset: 44px;
+    --inner: calc(var(--aboutH) * 0.58);
+  }
+
+  /* el canal central ya no usa paddings enormes; deja margen normal */
+  .about .container{
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: var(--aboutH);
+  }
+  .about-content{
+    max-width: 560px;     /* ancho cómodo en móviles grandes */
+    margin: 0 auto;
+    text-align: left;     /* evita el aspecto "una letra por línea" */
+  }
+  .about-content p{
+    text-align: left;     /* anula justificado sólo aquí en móvil */
+    hyphens: manual;      /* sin cortes agresivos */
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    line-height: 1.6;
+  }
+
+  /* reduce físicamente los fondos circulares */
+  .circles-left .big,
+  .circles-right .big{
+    width: 52vw; height: 52vw;
+  }
+  .circles-left .inner,
+  .circles-right .inner{
+    width: 40vw; height: 40vw;
+    opacity: .95;         /* mismos tonos, menos invasivos por tamaño */
+  }
+}
