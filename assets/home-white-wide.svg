@@ -1,0 +1,19 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-label="Home">
+  <!-- Casa ancha, sin chimenea, bordes redondeados -->
+  <path fill="#FFFFFF" d="
+    M256 84
+    L60 240
+    A24 24 0 0 0 76 252
+    H132
+    V436
+    A24 24 0 0 0 156 460
+    H356
+    A24 24 0 0 0 380 436
+    V252
+    H436
+    A24 24 0 0 0 452 240
+    L256 84 Z"></path>
+  <!-- Puerta rellena y redondeada -->
+  <rect x="234" y="320" width="44" height="120" rx="10" fill="#FFFFFF"></rect>
+</svg>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Sitio Personal</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Multani&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Casita -->
+  <a href="#top" class="home-slot home-parallax" id="home-slot" title="Inicio"></a>
+
+  <!-- Barra superior -->
+  <nav class="top-rail" id="top-rail" aria-label="Navegación principal">
+    <span class="rail-label">Inicio</span>
+    <div class="menu" id="menu">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#marco-rebotes">Del Curso</a>
+      <a href="#marco-rebotes">Wiki</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <span class="rail-dots" aria-hidden="true">•••</span>
+  </nav>
+
+  <main id="top">
+    <!-- Título -->
+    <header class="page-title-wrap">
+      <div class="container">
+        <h1 class="site-title">Portafolio Imagen Escrita 2025</h1>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="blue-band" aria-hidden="true"></div>
+      <div class="container">
+        <div class="p5-grid">
+          <div class="p5-slot" id="p5-hero-1" title="p5.js slot"></div>
+          <div class="p5-slot" id="p5-hero-2" title="p5.js slot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section about" id="sobre-mi">
+      <div class="circles circles-left" aria-hidden="true">
+        <span class="circle big blue"></span>
+        <span class="circle inner navy"></span>
+      </div>
+      <div class="circles circles-right" aria-hidden="true">
+        <span class="circle big blue"></span>
+        <span class="circle inner navy"></span>
+      </div>
+
+      <div class="container">
+        <div class="about-content">
+          <h2>SOBRE MÍ</h2>
+          <p>
+            Me llamo <strong>Matilde Orellana</strong>, soy estudiante de Diseño en la Pontificia Universidad
+            Católica de Valparaíso. Me defino como curiosa, observadora y flexible. Me gusta experimentar,
+            probar caminos distintos y aprender en el proceso. Busco ideas claras, y con personalidad.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section projects" id="proyectos">
+      <div class="container">
+        <h2>PROYECTOS</h2>
+
+        <!-- Visor 600x600 -->
+        <div class="viewer viewer-collapsed" id="viewer">
+          <div class="viewer-title" id="viewer-title">TÍTULO PROYECTO</div>
+          <div class="viewer-stage" id="viewer-stage"></div>
+        </div>
+
+        <!-- Galería (usa tus assets) -->
+        <div class="gallery" id="gallery">
+          <div class="thumb"
+               data-title="Proyecto 1"
+               data-link="https://editor.p5js.org/matildeorellana/full/L4yc8e8Wr"
+               data-img="assets/Proyecto 1 IEMOG.png">
+            <img src="assets/Proyecto 1 IEMOG.png" alt="Proyecto 1">
+          </div>
+
+          <div class="thumb"
+               data-title="Proyecto 2"
+               data-link="https://editor.p5js.org/matildeorellana/full/8TgEFOcj-"
+               data-img="assets/Proyecto 2 IEMOG.png">
+            <img src="assets/Proyecto 2 IEMOG.png" alt="Proyecto 2">
+          </div>
+
+          <div class="thumb"
+               data-title="Proyecto 3"
+               data-link="https://editor.p5js.org/matildeorellana/full/65GFsHkV1"
+               data-img="assets/Proyecto 3 IEMOG.png">
+            <img src="assets/Proyecto 3 IEMOG.png" alt="Proyecto 3">
+          </div>
+
+          <div class="thumb"
+               data-title="Proyecto 4"
+               data-link="https://editor.p5js.org/matildeorellana/full/wJvZ7tZD3"
+               data-img="assets/Proyecto 4 IEMOG.png">
+            <img src="assets/Proyecto 4 IEMOG.png" alt="Proyecto 4">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marco + Pelotas + Módulos -->
+    <section class="section" id="marco-rebotes">
+      <div class="frame-section" id="frame">
+        <canvas class="bounce-canvas" id="balls"></canvas>
+
+        <div class="wiki-box" id="wiki-box">
+          <!-- DEL CURSO -->
+          <div class="panel" id="wiki">
+            <div class="panel-header">
+              <button type="button" class="pill white" data-target="#wiki">DEL CURSO</button>
+            </div>
+            <div class="panel-body">
+              <div class="acc-content">
+                <p>
+                  <strong>Imagen Escrita</strong> es una asignatura que se centra en la intersección
+                  entre diseño, la programación y arte generativo. Utilizando <strong>p5.js</strong> como
+                  herramienta principal, el curso explora los fundamentos de la programación creativa
+                  y su aplicación en el diseño visual interactivo.
+                </p>
+                <p>
+                  A través del <em>creative coding</em> se hace énfasis en el pensamiento computacional como
+                  herramienta de diseño, fomentando un enfoque innovador en la resolución de problemas
+                  visuales y la creación artística. La integración de herramientas de <strong>IA</strong>
+                  busca ampliar las posibilidades creativas y técnicas, sirviendo como complemento al
+                  proceso de diseño y programación.
+                </p>
+                <div class="acc-actions">
+                  <a class="pill navy"
+                     href="https://wiki.ead.pucv.cl/Imagen_Escrita_2025"
+                     target="_blank" rel="noopener noreferrer">
+                    Abrir Wiki Del Curso
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- WIKI DEL PROYECTO -->
+          <div class="panel" id="aprendizajes">
+            <div class="panel-header">
+              <button type="button" class="pill white" data-target="#aprendizajes">WIKI DEL PROYECTO</button>
+            </div>
+            <div class="panel-body">
+              <div class="acc-content">
+                <p>
+                  En este enlace se encuentra en detalle el desarrollo de este módulo y de la página web como tal:
+                  procesos, decisiones de diseño, fragmentos de código y notas de implementación.
+                </p>
+                <div class="acc-actions">
+                  <a class="pill navy"
+                     href="https://wiki.ead.pucv.cl/Sitio_Web_IE_-_Matilde_Orellana"
+                     target="_blank" rel="noopener noreferrer">
+                    Abrir Wiki Del Proyecto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /panel -->
+        </div>
+        <!-- /wiki-box -->
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="container foot">
+      <button class="cta">CONTACTO</button>
+      <div class="icons">
+        <a class="icon-slot icon-mail"
+           href="mailto:matilde.orellana.g@mail.pucv.cl?subject=Contacto%20Portafolio%20Imagen%20Escrita%202025"
+           aria-label="Enviar correo a matilde.orellana.g@mail.pucv.cl" title="Enviar correo"></a>
+
+        <a class="icon-slot icon-web"
+           href="https://wiki.ead.pucv.cl/Matilde_Orellana" target="_blank" rel="noopener noreferrer"
+           aria-label="Abrir sitio web" title="Abrir sitio web"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

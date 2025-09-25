@@ -1,0 +1,11 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-label="Sitio web">
+  <!-- Globo con meridianos y paralelos redondeados -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"></circle>
+  <!-- Meridianos -->
+  <ellipse cx="256" cy="256" rx="120" ry="200" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"></ellipse>
+  <ellipse cx="256" cy="256" rx="60" ry="200" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"></ellipse>
+  <!-- Paralelos -->
+  <ellipse cx="256" cy="256" rx="200" ry="120" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"></ellipse>
+  <ellipse cx="256" cy="256" rx="200" ry="60" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"></ellipse>
+</svg>
